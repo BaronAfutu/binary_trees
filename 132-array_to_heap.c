@@ -10,10 +10,11 @@
  */
 heap_t *array_to_heap(int *array, size_t size)
 {
+	unsigned int index;
 	heap_t *root = NULL;
 
-	for (unsigned int i = 0; i < size; i++)
-		heap_insert(&root, array[i]);
+	for (index = 0; index < size; index++)
+		heap_insert(&root, array[index]);
 
 	return (root);
 }
